@@ -1,5 +1,5 @@
 - Pollock Landing Page
-- Open file with terminal:
 - https://quocdev03.github.io/Pollock-Landing-Page/
+- Open file with terminal:
 - pug index.pug --watch --pretty
 - sass ./Asset/sass/app.scss ./Asset/css/app.css --watch
