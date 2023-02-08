@@ -1,0 +1,31 @@
+include ./Asset/views/mixins
+doctype html
+html(lang="en")
+   head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible" content="IE=edge")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      title Pollock Landing Page
+      link(rel='preconnect' href='https://fonts.googleapis.com')
+      link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+      link(href='https://fonts.googleapis.com/css2?family=DM+Sans&family=Outfit:wght@400;500;600&display=swap' rel='stylesheet')
+      link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css")
+      link(rel="stylesheet" href="./Asset/css/app.css")
+      link(rel="icon" href="./Asset/images/logo.png" type="image/x-icon")
+   body
+      .wrapper
+         include ./Asset/views/header.pug
+         main
+            include ./Asset/views/services.pug
+            include ./Asset/views/logo.pug
+            include ./Asset/views/about.pug
+            include ./Asset/views/portfolio.pug
+            include ./Asset/views/cta.pug
+         include ./Asset/views/footer.pug
+      script(src="./Asset/script/app.js")
+
+
+
+
+//- pug index.pug --watch --pretty
+//- sass ./Asset/sass/app.scss ./Asset/css/app.css --watch

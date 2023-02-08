@@ -1,0 +1,135 @@
+.footer {
+   background-color: $bg-gray;
+   color: white;
+
+   &-top {
+      padding: 100px 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr) 3fr;
+      grid-gap: 60px;
+   }
+
+   &-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0;
+      border-top: 1px solid rgba(123, 136, 168, 0.3);
+   }
+
+   &-s {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      &-item {
+         background-color: $primary-color;
+         width: 52px;
+         height: 52px;
+         border-radius: 100rem;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         cursor: pointer;
+      }
+   }
+
+   &-heading {
+      font-size: 22px;
+      line-height: calc(33 / 22);
+      margin-bottom: 20px;
+   }
+
+   &-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   &-link {
+      color: inherit;
+      text-transform: uppercase;
+   }
+
+   &-newsletter {
+      &-desc {
+         margin-bottom: 25px;
+      }
+
+      &-form {
+         display: flex;
+         gap: 6px;
+         height: 48px;
+         width: 100%;
+         margin: 20px 0;
+      }
+
+      &-input {
+         all: unset;
+         border-radius: 5px;
+         background-color: white;
+         font-size: 16px;
+         padding: 0 18px;
+         color: $text;
+         flex: 1;
+      }
+
+      // Để không bị bóp lại
+      &-button {
+         flex-shrink: 0;
+         padding: 0 24px;
+      }
+
+      &-wraning {
+         margin-top: 15px;
+      }
+   }
+
+   @media screen and (max-width: 1023.98px) {
+      &-top {
+         grid-template-columns: repeat(4, 1fr);
+      }
+   }
+
+   @media screen and (max-width: 867.98px) {
+      &-top {
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+
+   @media screen and (max-width: 767.98px) {
+      &-top {
+         padding-bottom: 50px;
+      }
+
+      &-bottom {
+         flex-direction: column;
+         gap: 15px;
+         text-align: center;
+      }
+   }
+
+   @media screen and (max-width:467.98px) {
+      &-top {
+         grid-template-columns: 1fr;
+      }
+
+      &-newsletter {
+         &-form {
+            margin: 30px 0;
+         }
+
+         &-wraning {
+            text-align: center;
+         }
+      }
+
+      &-s {
+         &-item {
+            width: 42px;
+            height: 42px;
+         }
+      }
+   }
+
+}

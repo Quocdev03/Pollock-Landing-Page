@@ -1,0 +1,116 @@
+.about {
+   background-color: $bg;
+   padding: 120px 0;
+
+   &-heading {
+      font-size: 48px;
+      line-height: calc(56 / 48);
+      text-align: center;
+      margin-bottom: 30px;
+   }
+
+   &-caption {
+      text-align: center;
+      margin-bottom: 120px;
+   }
+
+   &-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 150px;
+      gap: 50px;
+   }
+
+   &-content {
+      max-width: 570px;
+      width: 100%;
+
+      &-heading {
+         font-size: 36px;
+         line-height: calc(46 / 36);
+         margin-bottom: 30px;
+      }
+
+      &-captions {
+         margin-bottom: 50px;
+      }
+
+      &-caption,
+      &-desc {
+         font-size: 18px;
+         line-height: calc(28 / 18);
+      }
+
+      &-caption {
+         display: block;
+         margin-bottom: 35px;
+      }
+
+      &-desc {
+         margin-bottom: 70px;
+      }
+
+      &-link {
+         padding: 15px 32px;
+      }
+
+      &-list {
+         max-width: 469px;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+      }
+
+      &-item {
+         display: flex;
+         align-items: flex-start;
+         gap: 13px;
+
+         &-right {
+            &-title {
+               font-weight: 500;
+               font-size: 18px;
+               line-height: calc(28 / 18);
+               margin-bottom: 10px;
+            }
+
+            &-desc {
+               font-size: 16px;
+               line-height: calc(26/ 16);
+            }
+         }
+      }
+   }
+
+   @media screen and (max-width: 767.98px) {
+      padding: 50px 0;
+
+      &-caption {
+         margin-bottom: 50px;
+      }
+
+      &-section {
+         flex-direction: column;
+         width: 100%;
+         gap: 60px;
+         margin-bottom: 50px;
+
+         &:nth-child(3) {
+            flex-direction: column-reverse;
+         }
+
+         &:nth-child(2) {
+            margin-bottom: 0;
+         }
+      }
+
+      &-content {
+         &-desc {
+            margin-bottom: 50px;
+         }
+      }
+   }
+
+}

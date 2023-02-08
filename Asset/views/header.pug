@@ -1,0 +1,40 @@
+header.header
+   img.header-shapes(srcSet="./Asset/images/bg-shapes.png 2x" alt="Shapes")
+   a(href="#services").header-scroll
+      .header-scroll-inner
+         img(src="./Asset/images/icon-arrow-down.svg" alt="")
+   nav.header-nav
+      .container.header-nav-container 
+         a.logo(href="#!")
+            img(srcSet="./Asset/images/logo.png 2x" alt="pollock")
+            span Pollock
+         ul.menu
+            //- each val in ['Home','Service','About','Page','Blog','Contact']
+               li.menu-item
+                  a.menu-link(href="#!")= val
+            each val in [{href: "#!",title: "Home"},{href: "#services",title: "Service"},{href: "#!",title: "About"},{href: "#!",title: "Page"},{href: "#!",title: "Blog"},{href: "#!",title: "Contact"}]
+               li.menu-item
+                  a.menu-link(href=val.href)= val.title
+            .menu-close 
+               span <i class="fa-solid fa-xmark"></i>
+         .header-tools
+            .menu-toggle 
+               span <i class="fa-solid fa-bars"></i>
+            img(src="./Asset/images/icon-search.svg" ,alt="Search")
+            img(src="./Asset/images/icon-bag.svg" alt="cart")
+            button.header-button.button Sign Up
+   .hero
+      .container.hero-container 
+         .hero-content
+            h1.heading.heading--biggest.hero-heading Branding to fuel your growth
+               span  goals & ideas.
+            p.text.hero-desc We're a digital product and UX agency in San Francisco. Strategy, design, and development across all platforms.
+            .hero-links
+               a.hero-started.button(href="#!")  Get Started
+               a.hero-play(href="#services")
+                  span.hero-play-icon 
+                     img(src="./Asset/images/icon-play.svg" alt="Play")
+                  span.hero-play-text How It Works
+         .hero-image 
+            img(srcSet ="./Asset/images/img-girl.png 2x" alt="Girl")
+

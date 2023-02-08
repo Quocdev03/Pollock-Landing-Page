@@ -1,0 +1,59 @@
+.portfolio {
+   padding: 120px 0;
+
+   &-heading {
+      text-align: center;
+      max-width: 970px;
+      margin: 0 auto 100px;
+   }
+
+   &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: $primary-color;
+      font-size: 22px;
+      line-height: calc(32 / 22);
+
+      &:first-child {
+         grid-column: 1 / span 7;
+      }
+
+      // -1 sẽ chiếm phần còn lại
+      &:nth-child(2) {
+         grid-column: 8 / -1;
+      }
+
+      &:nth-child(3) {
+         grid-column: 1 / span 5;
+      }
+
+      &:last-child {
+         grid-column: 6 / -1;
+      }
+   }
+
+   &-list {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 50px 30px;
+   }
+
+   @media screen and (max-width: 767.98px) {
+      padding: 50px 0;
+
+      &-heading {
+         margin-bottom: 40px;
+      }
+
+      &-list {
+         gap: 30px 15px;
+      }
+
+      &-item {
+         gap: 15px;
+         font-size: 16px;
+      }
+   }
+
+}

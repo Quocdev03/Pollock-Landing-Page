@@ -1,0 +1,134 @@
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: $primary-font;
+   font-size: 16px;
+   color: $text;
+   line-height: 1;
+   text-transform: capitalize;
+   overflow-x: hidden;
+   font-weight: 400;
+}
+
+.wrapper {
+   max-width: 1920px;
+   margin: 0 auto;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.button {
+   all: unset;
+   color: white;
+   border-radius: 5px;
+   background-color: $primary-color;
+   cursor: pointer;
+   font-size: 15px;
+   line-height: calc(24 / 15);
+   text-transform: uppercase;
+   font-family: $secondary-font;
+   font-weight: 500;
+   letter-spacing: -0.3px;
+   display: inline-block;
+   width: fit-content;
+
+   @media screen and (max-width: 767.98px) {
+      font-size: 13px !important;
+      padding: 13px 12px !important;
+   }
+
+   @media screen and (max-width: 320.98px) {
+      padding: 9px 8px !important;
+   }
+
+}
+
+.heading {
+   color: $text-heading;
+   font-weight: 500;
+   font-family: $secondary-font;
+
+   &--biggest {
+      font-size: 72px !important;
+      line-height: calc(78 / 72) !important;
+   }
+
+   &--bigger {
+      font-size: 64px !important;
+      line-height: calc(72 / 64) !important;
+   }
+
+   &--big {
+      font-size: 48px !important;
+      line-height: calc(56 / 48) !important;
+   }
+
+   &--large {
+      font-size: 42px;
+      line-height: calc(50 / 36) !important;
+   }
+
+   &--normal {
+      font-size: 36px !important;
+      line-height: calc(46 / 36) !important;
+   }
+
+   &--medium {
+      font-size: 22px !important;
+      line-height: calc(32 / 22) !important;
+   }
+
+   &--small {
+      font-size: 18px !important;
+      line-height: calc(28 / 18) !important;
+   }
+
+   @media screen and (max-width: 767.98px) {
+      &--biggest {
+         font-size: 50px !important;
+      }
+
+      &--bigger {
+         font-size: 46px !important;
+      }
+
+      &--big {
+         font-size: 40px !important;
+      }
+
+      &--large {
+         font-size: 36px !important;
+      }
+
+      &--normal {
+         font-size: 32px !important;
+      }
+   }
+
+}
+
+.text {
+   font-size: 18px;
+   line-height: calc(28 / 18);
+
+   &--small {
+      font-size: 16px !important;
+      line-height: calc(26 / 16) !important;
+   }
+
+   &--xsmall {
+      font-size: 14px !important;
+      line-height: calc(24 / 14) !important;
+   }
+
+   @media screen and (max-width: 767.98px) {
+      font-size: 16px !important;
+   }
+
+}
